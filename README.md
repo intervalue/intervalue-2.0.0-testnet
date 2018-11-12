@@ -15,20 +15,20 @@ light-demo - construct transaction messages, and send to local full node.
 1. config(default.config)  
   keep default.config and seed-1.0.0-pg.jar in the same path.  
   _ShardSize, LocalFullNodeSize, NeighborSize, seed.pubIP, seed.port, seed.rpcPort, seed.httpPort_ are very important.  
-  ShardSize\*LocalFullNodeSize must be equal to total number of local full nodes.  
+  ShardSize\*LocalFullNodeSize must be equal to the total number of local full nodes.  
 2. run  
   command: nohup java -jar seed-1.0.0-pg.jar --Ice.Config=./default.config &  
 
 ### localfullnode   
 1. config(default.config)  
   keep default.config and localfullnode-1.0.0-pg.jar in the same path.  
-  _seed.pubIP, seed.port, seed.rpcPort, seed.httpPort_ need to be consistent with fullnode.  
+  _seed.pubIP, seed.port, seed.rpcPort, seed.httpPort_ must be consistent with fullnode's config.  
 2. run  
 command: nohup java -jar localfullnode-1.0.0-pg.jar --Ice.Config=./default.config &   
 
 ### lightnode-demo   
 1. config(default.config)  
   keep default.config and light-demo-1.0.0.jar in the same path.  
-  _seed.pubIP, seed.port, seed.rpcPort, seed.httpPort_ need to be consistent with fullnode.  
+  _seed.pubIP, seed.port, seed.rpcPort, seed.httpPort_ must be consistent with fullnode's config.  
 2. run  
   command: nohup java -jar light-demo-1.0.0.jar --Ice.Config=./default.config &   
