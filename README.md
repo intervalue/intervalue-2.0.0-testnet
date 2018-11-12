@@ -11,14 +11,13 @@ light-demo - construct transaction messages, and send to local full node.
 ### env  
   ubuntu16.04, jdk1.8(sun)  
   
-### full node  
+### full node (just one)  
 1. config(default.config)  
   keep default.config and seed-1.0.0-pg.jar in the same path.  
   _ShardSize, LocalFullNodeSize, NeighborSize, seed.pubIP, seed.port, seed.rpcPort, seed.httpPort_ are very important.  
   ShardSize\*LocalFullNodeSize must be equal to the total number of local full nodes.  
 2. run  
   command: nohup java -jar seed-1.0.0-pg.jar --Ice.Config=./default.config &  
-  just one.  
 
 ### local full node   
 1. config(default.config)  
