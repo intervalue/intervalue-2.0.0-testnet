@@ -3,7 +3,7 @@
 for tps test.
 
 ## Introduction  
-full node - shard all local full nodes, get local full node list, show tps info.  
+full node - build network, shard all local full nodes, get local full node list, show tps info.  
 local full node - receive transaction messages, create events with transactions, gossip events with other nodes, consensus events and transactions, calculate tps.  
 light-demo - construct transaction messages, and send to local full node.
 
@@ -17,7 +17,8 @@ light-demo - construct transaction messages, and send to local full node.
   _ShardSize, LocalFullNodeSize, NeighborSize, seed.pubIP, seed.port, seed.rpcPort, seed.httpPort_ are very important.  
   ShardSize\*LocalFullNodeSize must be equal to the total number of local full nodes.  
 2. run  
-  command: nohup java -jar seed-1.0.0-pg.jar --Ice.Config=./default.config &  
+  command: nohup java -jar seed-1.0.0-pg.jar --Ice.Config=./default.config & 
+  just one.  
 
 ### local full node   
 1. config(default.config)  
