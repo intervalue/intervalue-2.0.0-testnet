@@ -9,14 +9,14 @@ light-demo - construct transaction messages, and send to local full node.
 
 ## Manual  
 ### fullnode
-1. config
-statisticsInterval=3000 ***tps statistics interval(ms)***  
-statisticsBatches=1000 ***tps statistics interval(ms)***  
-ShardSize =1 
-LocalFullNodeSize = 3 ***ShardSize*LocalFullNodeSize must equal local full node number***  
-NeighborSize=3
-
-seed.pubIP = 172.17.2.40
-seed.port = 20000
-seed.rpcPort = 20001
-seed.httpPort = 20002
+1. config  
+statisticsInterval=3000 ***#tps statistics interval(ms)***  
+statisticsBatches=1000 ***#tps statistics interval(ms)***  
+ShardSize =1  
+LocalFullNodeSize = 3 ***#ShardSize*LocalFullNodeSize must equal local full node number***  
+NeighborSize=3  
+  
+seed.pubIP = 172.17.2.40  
+seed.port = 20000  
+seed.rpcPort = 20001  
+seed.httpPort = 20002  
