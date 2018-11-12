@@ -13,9 +13,9 @@ light-demo - construct transaction messages, and send to local full node.
 statisticsInterval=3000 ***#tps statistics interval(ms)***  
 statisticsBatches=1000 ***#tps statistics interval(ms)***  
 ShardSize =1  
-LocalFullNodeSize = 3 ***#ShardSize\*LocalFullNodeSize must equal local full node number***  
-NeighborSize=3   
-seed.pubIP = 172.17.2.40  
+LocalFullNodeSize = 3 ***#ShardSize\*LocalFullNodeSize must be equal to local full node number***  
+NeighborSize=3 ***get local full node number***     
+seed.pubIP = 172.17.2.40 ***your ip***  
 seed.port = 20000  
 seed.rpcPort = 20001  
 seed.httpPort = 20002  
